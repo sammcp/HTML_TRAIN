@@ -1,0 +1,7 @@
+HTML Cheat Sheet 
+
+Name vs id 
+    name is used when sending data in a form submission, such as <input> and <select> as that's the identifier used in the POST or GET call
+    That happend on form submission 
+
+    use id attributes whenever you need to address a particular HTML element with CSS, Javascript ot a fragment identifier.
