@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang ="en">
+<html lang ="en"> <!--specifies the language as english to search engines--> 
 <header>
     <h1 name="Title">This is my first Header in html</h1>
 </html>
@@ -19,11 +19,16 @@
         <h6>I lied</h6>
     </div>
 
-    <div>
+    <div style = "color:red;"> <!--changes the colour--> 
         <h6> List of Cool Links</h6>
         <a href= "https://www.bulbapedia.com">Bulbapedia</a>
-        <img src="img_squirtle.jpg"> <!--Relatice image i.e. hosted locally--> 
-        <img src="https://bulbapedia.bulbagarden.net/wiki/File:007Squirtle.png">
+        <div>
+            <img src="img_squirtle.jpg"> <!--Relative image i.e. hosted locally--> 
+            <img title = "I'm a little squirtle" src="https://archives.bulbagarden.net/media/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png" width = "200" height = "200" alt = "404 - squirtle not found"> <!--absolute URL i.e. image hosted elsewhere--> 
+            <!--when you hover over the image it says "i'm a little squirtle"--> 
+        </div>
     </div>
+
+
 </body>
 </html>
