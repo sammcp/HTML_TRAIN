@@ -5,11 +5,32 @@ Name vs id
     That happend on form submission 
 
     use id attributes whenever you need to address a particular HTML element with CSS, Javascript ot a fragment identifier.
-Breaks 
+
+**useful tags-----------------------------------------------------------
+<!DOCTYPE html> - should go at the start
+<html en="en"> - start of html 
+<title> - states the title of your page (what appears in the tab at the top)
+<link rel="icon" type="image/x-icon" href="source"> - puts a favicon in the title (the little image by the title)
+<p> - paragraph
+<hX> - where x is 1 to 6 - heading 
+<header> - top of the page 
+<body> - body of the page
+<div> - divider
+<img src = "source" alt="some text or another image"> - defines a image
+<a href="url"> - defines a link (you may use <img> inbetween the <a> and </a> to create a link via clicking on the image)
+    use <a href="url" target="_xxx"> tochange how the link opens 
+    _self - Default. Opens the document in the same window/tab as it was clicked
+    _blank - Opens the document in a new window or tab
+    _parent - Opens the document in the parent frame
+    _top - Opens the document in the full body of the window
+
+<picture> - better than <img>
+<map> - used to make image maps 
+**Breaks-----------------------------------------------
 <br> - line break 
 <hr> = horixontal line 
 
-Style
+**Style-----------------------------------------------
 <p style="property:value;"> style can be used to add css to an HTML tag (Includes body, header, text etc)
     color
     font-family
@@ -18,7 +39,7 @@ Style
 
 <p Title="Title goes here"> the text in the title = appers when the element is hovered over
 
-Formatting Elements
+**Formatting Elements-------------------------------------------
     <b> - Bold text
     <strong> - Important text
     <i> - Italic text
@@ -43,7 +64,7 @@ Other Formatting Elements
 <cite> tag defines the title of a creative work (e.g. a book) text in the <cite> element usually renders in italic.
 <bdo> tag is used to override the current text direction for example <bdo dir="rtl">stinky</bdo> will have text go left to right
 
-Color 
+**Color--------------------------------------------------------(can also be done in CSS) 
 You can change the color using 
 style = color:red; or 
 style = "background-color:red; or
@@ -54,4 +75,80 @@ rgb(255,99,71)
 #ff6347
 hsl(9, 100%, 54%)
 used in any HTML elements
+
+**image maps--------------------------------------------------------
+The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+
+e.g.
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+types of shapes: 
+rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region
+
+image maps can also trigger javascript functions: 
+<area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+
+**background images-----------------------------------------------------------------
+To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:
+<p style="background-image: url('img_girl.jpg');">
+
+you can also add some cool variables to make it cover the whole page
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat; //doesn't repeat
+  background-attachment: fixed; //determines if a background image scrolls with the rest of the page or is fixed
+  background-size: cover; //covers the width of the page
+}
+</style>
+
+**Picture Element------------------------------------------------------------------
+picture allows more flexibility in specifying images in terms of browser and screen width
+
+this picture will appear at first as img_food and as the browser gets smaller will go to img_car and finally img_girl when img_car cannot be displayed 
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+Note: 
+Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+
+Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+
+**Tables--------------------------------------------------------------------------------------------------------
+<table>
+    <tr> //each one of these is a record in the table stands for table row
+        <th>Heading1</th> //th makes table headings
+        <th>Heading2</th>
+    </tr>
+    <tr>
+        <td>item1</td> //td is an item in the table (table data)
+        <td>item2</td>
+    </tr>
+</table>
+
+table tags
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+
+
 

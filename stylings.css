@@ -1,0 +1,19 @@
+header{
+    border: 2px solid navy
+}
+
+body{
+    background-color: powderblue;
+    margin: 20px;
+    
+}
+h1{
+    color: navy;
+    font-family: arial;
+    /*padding:30px;*/
+}
+
+p{
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+}

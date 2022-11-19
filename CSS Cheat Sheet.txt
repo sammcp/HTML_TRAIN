@@ -9,3 +9,39 @@ Internal - by using a <style> element in the <head> section (used to style a sin
     </style>
 </head>
 External - by using a <link> element to link to an external CSS file 
+
+**------------------------------------------------------------------------------------------------
+styling (Style="float:left;width:42%;height:42%;) 
+float - the image will float to the right/left of the text
+
+
+**CSS and Tables-----------------------------------------------------------------------------------
+
+CSS and tables 
+To add a border, use the CSS border property on table, th, and td elements: 
+To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color:blue;
+}
+
+you can also set the border colour
+
+you can also use the border style property for: 
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden 
+
+e.g.
+ th, td {
+  border-style: dotted;
+}
