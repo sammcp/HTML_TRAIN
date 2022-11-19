@@ -16,6 +16,8 @@ Style
     font-size
     text-align
 
+<p Title="Title goes here"> the text in the title = appers when the element is hovered over
+
 Formatting Elements
     <b> - Bold text
     <strong> - Important text
@@ -31,4 +33,25 @@ Formatting Elements
 
 Other Formatting Elements 
 <blockquote> element defines a section that is quoted from another source. Browsers usually indent <blockquote> elements.
-<pre></pre> text inbetween the pre elements remains formated how it is typed 
+<pre> text inbetween the pre elements remains formated how it is typed 
+<q> defines a short quotation Browsers normally insert quotation marks around the quotation.
+
+<abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Marking abbreviations can give useful information to browsers, translation systems and search-engines. (you can use TITLE to have the full text appear when it is hovered over
+
+<address> tag defines the contact information for the author/owner of a document or an article. renders in italic, and browsers will always add a line break before and after the <address> element.
+
+<cite> tag defines the title of a creative work (e.g. a book) text in the <cite> element usually renders in italic.
+<bdo> tag is used to override the current text direction for example <bdo dir="rtl">stinky</bdo> will have text go left to right
+
+Color 
+You can change the color using 
+style = color:red; or 
+style = "background-color:red; or
+style = border:2px solid red;
+
+color be set as above or using 
+rgb(255,99,71)
+#ff6347
+hsl(9, 100%, 54%)
+used in any HTML elements
+
