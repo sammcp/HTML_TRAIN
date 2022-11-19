@@ -5,3 +5,30 @@ Name vs id
     That happend on form submission 
 
     use id attributes whenever you need to address a particular HTML element with CSS, Javascript ot a fragment identifier.
+Breaks 
+<br> - line break 
+<hr> = horixontal line 
+
+Style
+<p style="property:value;"> style can be used to add css to an HTML tag (Includes body, header, text etc)
+    color
+    font-family
+    font-size
+    text-align
+
+Formatting Elements
+    <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Smaller text
+    <del> - Deleted text
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text
+    used as such <b> bold text </b> - can be used inside <p></p>
+
+Other Formatting Elements 
+<blockquote> element defines a section that is quoted from another source. Browsers usually indent <blockquote> elements.
+<pre></pre> text inbetween the pre elements remains formated how it is typed 
