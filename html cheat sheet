@@ -182,4 +182,91 @@ th,td{
     padding: 15px; /adds a padding of 15 pixels to all cells 
 }
 
+**Lists---------------------------------------------------------------
+<ul> - unordered list <li> for list elements
+<ol> - ordered list <li> for list elements
+<dl> - described list <dt> and <dd> for list elements
 
+you can use various attributes to change the circles or number letters
+used to display items for example type="1" for ordered lists shows the list elements as ordered
+
+**HTML Block and Inline Elements and divs----------------------------------------
+Every HTML elements has a default display value depending on what type of element it is, there are two display values: block and inline
+
+<Block Element>: 
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+e.g. <p><div><table>
+
+<Inline Elements>:
+An inline element does not start on a new line.
+An inline element only takes up as much width as necessary.
+e.g. <b><small><img>
+
+the <div> element is often used in conjuction with CSS to style blocks of text
+the <span> element is an inline container used to mark up a part of text, or part of a document e.g. <p>my mother has <span style="color:blue;">blue</span> eyes</p>
+
+**HTML Classes and ID's-------------------------------------------------------------
+
+used to style stuff by CSS, stuff with a specific class attribute will get picked up and altered. 
+
+MULTIPLE HTML ELEMENTS CAN HAVE THE SAME CLASS and are refrenced via .
+
+The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+e.g. <div class = "city"></div>
+
+will get picked up and have that div change to a tomato color
+.city{
+    background-color:tomato;
+}
+
+Ids on the other hand are unique within the HTML document and are refrenced via #
+<h1 id="mainHeader">
+is picked up by 
+#mainHeader{
+    background-color:lightblue;
+}
+
+Id's can also be used as links like so 
+<a href="#mainHeader">Go Back to the header!</a> 
+and can even be used in other pages <a hred = "another_page.html#mainHeader">
+
+**Iframes----------------------------------------------------------------------
+An HTML iframe is used to display a web page within a web page
+
+<iframe src="url" name = iframe_name style="height:200px;width:300px;" title="description"></iframe>
+you can also change the border and style using CSS
+
+you can also use <a href="urL" target="iframe_name">link</a> to change / set an iframe link
+
+**javascript (briefly)---------------------------------------------------------
+can be called using the <Script> tag
+
+**The Head Element-------------------------------------------------------------
+The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>
+
+the <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. and used for SE results
+
+The <style> element is used to define style information for a single HTML page in CSS
+
+The <link> element defines the relationship between the current document and an external resource. mostly to link to CSS files etc
+
+he <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+
+Viewport is the user's visible area of a webpage, it varies with device
+
+for example commonly used settings are: 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser
+
+The <base> element specifies the base URL and/or target for all relative URLs in a page.
+
+The <base> tag must have either an href or a target attribute present, or both.
+
+There can only be one single <base> element in a document!
+
+**HTML Layout ELements---------------------------------------------------------------
