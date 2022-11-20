@@ -17,3 +17,9 @@ p{
     color:black;
     font-family:'Times New Roman', Times, serif;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color:blue;
+  }

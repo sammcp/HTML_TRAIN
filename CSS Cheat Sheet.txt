@@ -45,3 +45,11 @@ e.g.
  th, td {
   border-style: dotted;
 }
+
+you can also use things like text-allign and padding 
+
+th, td {
+  padding: 15px;
+  text-align:left;
+  border-spacing:4px; //the space between table cells, set to 2 by default
+}

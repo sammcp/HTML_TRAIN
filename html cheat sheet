@@ -127,9 +127,9 @@ Always specify an <img> element as the last child element of the <picture> eleme
 Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
 
 **Tables--------------------------------------------------------------------------------------------------------
-<table>
-    <tr> //each one of these is a record in the table stands for table row
-        <th>Heading1</th> //th makes table headings
+<table style = "width: 60%"> //set the width of the WHOLE TABLE
+    <tr style = "height:200px"> //each one of these is a record in the table stands for table row
+        <th style = "width:70%">Heading1</th> //th makes table headings (width sets the width of the cell relitive to the table)
         <th>Heading2</th>
     </tr>
     <tr>
@@ -140,15 +140,46 @@ Some browsers or devices may not support all image formats. By using the <pictur
 
 table tags
 <table>	Defines a table
-<th>	Defines a header cell in a table
+<th>	Defines a header cell in a table, can be any cell within a table (top or down the left hand side etc)
 <tr>	Defines a row in a table
 <td>	Defines a cell in a table
 <caption>	Defines a table caption
 <colgroup>	Specifies a group of one or more columns in a table for formatting
 <col>	Specifies column properties for each column within a <colgroup> element
-<thead>	Groups the header content in a table
-<tbody>	Groups the body content in a table
-<tfoot>	Groups the footer content in a table
+<thead>	Groups the header content in a table (used mainly to differentiate for CSS manipulation)
+<tbody>	Groups the body content in a table (used mainly to differentiate for CSS manipulation)
+<tfoot>	Groups the footer content in a table (used mainly to differentiate for CSS manipulation)
+Table Attributes:
+<th colspan="2"> this spans over two columns (Accross)</th> - one column span over two coumns (only affects a single row)
+<th rowspan="2"> this spans over two rows (down) </th> - one rows spans over two rows (only affects one column)
+you can use both of the above in tandom to have one cell span over multiple rows and columns
 
+colgroups
+colgroups can be used to apply the same properties to groups of columns in tables 
+for example: 
+<table>
+  <colgroup>
+    <col span="3">
+    <col span="2" style="background-color: pink">
+  </colgroup>
+    will apply the colour pink to the 4th and 5th columns
+
+there are only a few legal CSS properties that can be used as above: 
+width property
+visibility property
+background properties
+border properties
+
+Notes:
+
+typical CSS text styling like text align can be used on table cells e.g.
+th{
+    text-align:left; //centres all the table header text to the centre 
+}
+
+you can also use padding to make tables look nice 
+th,td{
+    padding: 15px; /adds a padding of 15 pixels to all cells 
+}
 
 
