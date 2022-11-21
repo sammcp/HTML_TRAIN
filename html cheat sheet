@@ -274,11 +274,30 @@ There can only be one single <base> element in a document!
 **HTML Layout ELements------------------------------------------------------------
 HTML Layout elements are used to structure the HTML page
 
-<header> - Defines a header for a document or a section
+<header> - Defines a header for a document or a section - i.e. introductory content, set of navigational linksm heading elements, logo or icon. There can be multiple headers in one html document but it cannot be placed within a footer, address or another header.
 <nav> - Defines a set of navigation links
-<section> - Defines a section in a document
-<article> - Defines an independent, self-contained content
+<section> - Defines a section in a document - A section is a thematic grouping of content, typically with a heading
+<article> - Defines an independent, self-contained content - An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
 <aside> - Defines content aside from the content (like a sidebar)
-<footer> - Defines a footer for a document or a section
+<footer> - Defines a footer for a document or a section -i.e. copyright info, related documents / sites, "back to top"
 <details> - Defines additional details that the user can open and close on demand
 <summary> - Defines a heading for the <details> element
+<figure> - tag specifies self contained content like illustrations, disgrams, photos, code listings etc 
+<figcaption> - tag specifies a caption for <figure>, it can be the last or first child of a figure element e.g.
+<figure>    
+    <img>
+    <figcaption>Fig1 - your mum</figcaption>
+</figure>
+
+**HTML Semantic Elements----------------------------------------------------------
+A semantic element clearly describes its meaning to both the browser and the developer.
+demantic elements are used to give the text or item the element represents a meaning so that it is easier to read / alter with CSS Etc
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+
+
+

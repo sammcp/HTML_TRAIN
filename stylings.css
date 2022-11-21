@@ -23,3 +23,7 @@ table, th, td {
     border-collapse: collapse;
     border-color:blue;
   }
+
+section{
+    border: 1px solid black;
+}
