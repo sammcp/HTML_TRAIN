@@ -246,6 +246,8 @@ can be called using the <Script> tag
 **The Head Element-------------------------------------------------------------
 The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>
 
+the head element does not appear in the GUI but is used to set meta data such as the title, favicon, links and search engine notes
+
 the <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. and used for SE results
 
 The <style> element is used to define style information for a single HTML page in CSS
