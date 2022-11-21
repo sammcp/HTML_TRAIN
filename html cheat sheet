@@ -291,13 +291,23 @@ HTML Layout elements are used to structure the HTML page
 
 **HTML Semantic Elements----------------------------------------------------------
 A semantic element clearly describes its meaning to both the browser and the developer.
-demantic elements are used to give the text or item the element represents a meaning so that it is easier to read / alter with CSS Etc
+demantic elements are used to give the text or item the element represents a meaning so that it is easier to read / alter with CSS Etc. Typically it does not provide uniqiue visual effects (for example <h1></h1> increace font size and give the text the role of a header)
 
 Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
 
 Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
 
+**HTML Best Practices---------------------------------------------------------------
 
+use <!DOCTYPE html>
+use lowercase element names
+close all "close-able" elements
+user lowercase attribute names (I.e. href vs HREF)
+always quote attribute values ""
+always specify alt, width and height for images
+always include the title element and lang attribute
+try to close single tag HTML elements e.g. <emta charset="utf-8"/> as it is required for XHTML and XML meta data, especially the charset and viewport
+use lowercase file names
 
 
 
