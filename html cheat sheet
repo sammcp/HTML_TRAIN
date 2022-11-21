@@ -384,7 +384,23 @@ The autocomplete in <form> attribute specifies whether a form should have autoco
 
 The novalidate attribute for <form> (true/false) specifies that the form-data (input) should not be validated when submitted.
 
-<input> element
+**Form Elements----------------------------------------------------------------------
+
+Form Elements
+<input> - see below
+<label> - used to describe the elements of the form, good for screen readers and those that cannot click small areas well
+<select> - defines a drop down list
+<option> - defines an option that can be selected in the list
+<textarea> - The <textarea> element defines a multi-line input field (a text area):
+<button> - defines a clickable button
+<fieldset> - used to group related data in a form (it puts a box around it)
+<legend> - display a caption for the fieldset
+<datalist> - The <datalist> element specifies a list of pre-defined options for an <input> element.Uers will see a drop-down list of the pre-defined options as they input data.
+<output> - represents the result of a calculation (like performed by a script)
+<optgroup> - defines a group of related options in a sropdown
+
+
+<input> element-----------------------------------------------------------
  
 <input type="text">	Displays a single-line text input field
 <input type="radio">	Displays a radio button (for selecting one of many choices)
@@ -392,8 +408,47 @@ The novalidate attribute for <form> (true/false) specifies that the form-data (i
 <input type="submit">	Displays a submit button (for submitting the form)
 <input type="button">	Displays a clickable button
 
+a list of all types is available here: 
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
 <input> is often used in conjucture with <label for="textbox1">label</label> displays the text and it will also point the user towards the input tag it is "for", this must be equal to the id attribute of the corresponding input element. THis helps users with certain disabilities etc
 
 each <input> element should have a name attribute or it will not submit the data
+
+there is also a list of input restrictions that can be defined via attribute
+Attribute	Description
+checked - Specifies that an input field should be pre-selected when the page loads 
+disabled - Specifies that an input field should be disabled
+max	Specifies - the maximum value for an input field
+maxlength - Specifies the maximum number of character for an input field
+min	- Specifies the minimum value for an input field
+pattern - Specifies a regular expression to check the input value against
+readonly - Specifies that an input field is read only (cannot be changed)
+required - Specifies that an input field is required (must be filled out)
+size - Specifies the width (in characters) of an input field
+step - Specifies the legal number intervals for an input field
+value - Specifies the default value for an input field
+
 
 
