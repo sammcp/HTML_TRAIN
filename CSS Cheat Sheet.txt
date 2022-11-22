@@ -1,5 +1,8 @@
 CSS Cheat Sheet
-Inline - by using the style attribute inside HTML elements (used for a single element)
+
+**-----------------------------------------how to add CSS to HTML:
+
+Inline - by using the style attribute inside HTML elements (used for a single element) (BAD)
 Internal - by using a <style> element in the <head> section (used to style a single HTML page) for example 
 <head>
     <style>
@@ -8,7 +11,7 @@ Internal - by using a <style> element in the <head> section (used to style a sin
     p    {color: red;}
     </style>
 </head>
-External - by using a <link> element to link to an external CSS file 
+External - by using a <link> element to link to an external CSS file (far better)
 
 **-----------------------------------------------------------------------------------------------
 CSS Syntax
@@ -23,21 +26,44 @@ Element - select all HTML elements of a certain type, i.e. all h1 elements h1{}
 Class - select all HTML elements of a certain class (defined as a HTML attribute in the element) i.e. <h1 class = "headers">, uses a dot .headers{}
 ID - select a specific HTML element with an Id, Ids are uniqie to HTML elements i.e. <h1 id="squirtle heading"> no other HTML element will have an id of "squirtle heading" uses a # #squirtle_heading{}
 combining Selectors
-- specifying multipe selectors for the element to be styled 
 
- selector-1 selector-2{
-    property:value;
-}
+--> specifying multipe selectors for the element to be styled, there can be no space between the two selectors
 
+ selector-1.selector-2{}
 e.g. 
-h1.large-header{ selects all elements that are the h1 element and have the class "large-header"
+h1.large-header{}selects all elements that are the h1 element and have the class "large-header"
+
+--> CSS Ancestor selectors with the syntax: there must be a space between the ancestor and child selectors
+.ancestor .child{}
+e.g.
+div p {} selects all p elements that have a div as an ancestor (even if the div tag is not the direct ancestor of p)
+
+-->you can also combine selectors to give multiple selectors the same property. For example if you have the classes big and large you can:
+.big, .large{} applies the style to all elements with the big class and all elements with the large class
+
+-->These can all be combined for example: 
+header.main-header h1.brown, .large{} selects all h1 elements with class brown that have a header with class main-header as an ancestor AND all elements with the large class
+
+--> you can also use the * selector to select everything on the entire page e.g. *{}
+
+**Loading the Styles into the HTML Page{
 
 }
 
-**------------------------------------------------------------------------------------------------
-styling (Style="float:left;width:42%;height:42%;) 
-float - the image will float to the right/left of the text
+**----------------------------------------------------------------------------------------------
+Overwriting Styles
 
+when there are conflicting styles for an element the style is chosen via a hierarchy of selectors
+the lowest is: element, then class then id. id will overwrite anything
+
+in the case where there are two of the same selectors the element will be styled with whatever style is set last in the CSS file, for example: 
+h1{
+    color: blue;
+}
+h1{
+    color:red;
+}
+would mean all h1 elements are coloured blue
 
 **CSS and Tables-----------------------------------------------------------------------------------
 
