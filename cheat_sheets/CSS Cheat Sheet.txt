@@ -54,7 +54,13 @@ header.main-header h1.brown, .large{} selects all h1 elements with class brown t
 Overwriting Styles
 
 when there are conflicting styles for an element the style is chosen via a hierarchy of selectors
-the lowest is: element, then class then id. id will overwrite anything
+the lowest is: element, then class then id. id will overwrite anything. 
+
+if a selector is a combined selector then it is chosen via the following method: 
+->whichever has the most #id selectors (if the same number then:)
+->whichever has the most .class selectors (if the same number then:)
+->whichever has the most element selectors. (if the same number then:)
+->whichever is lowest on the CSS sheet
 
 in the case where there are two of the same selectors the element will be styled with whatever style is set last in the CSS file, for example: 
 h1{
