@@ -10,6 +10,30 @@ Internal - by using a <style> element in the <head> section (used to style a sin
 </head>
 External - by using a <link> element to link to an external CSS file 
 
+**-----------------------------------------------------------------------------------------------
+CSS Syntax
+
+selector{
+    property1:value;
+    propert2:value;
+}
+
+**Selectors--------------------------------------------------------------------------------------
+Element - select all HTML elements of a certain type, i.e. all h1 elements h1{}
+Class - select all HTML elements of a certain class (defined as a HTML attribute in the element) i.e. <h1 class = "headers">, uses a dot .headers{}
+ID - select a specific HTML element with an Id, Ids are uniqie to HTML elements i.e. <h1 id="squirtle heading"> no other HTML element will have an id of "squirtle heading" uses a # #squirtle_heading{}
+combining Selectors
+- specifying multipe selectors for the element to be styled 
+
+ selector-1 selector-2{
+    property:value;
+}
+
+e.g. 
+h1.large-header{ selects all elements that are the h1 element and have the class "large-header"
+
+}
+
 **------------------------------------------------------------------------------------------------
 styling (Style="float:left;width:42%;height:42%;) 
 float - the image will float to the right/left of the text
