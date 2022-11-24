@@ -2,7 +2,7 @@ CSS Cheat Sheet
 
 **-----------------------------------------how to add CSS to HTML:
 
-Inline - by using the style attribute inside HTML elements (used for a single element) (BAD)
+Inline - by using the style attribute inside HTML elements (used for a single element) (BAD) (also, over rides everything)
 Internal - by using a <style> element in the <head> section (used to style a single HTML page) for example 
 <head>
     <style>
@@ -46,10 +46,6 @@ header.main-header h1.brown, .large{} selects all h1 elements with class brown t
 
 --> you can also use the * selector to select everything on the entire page e.g. *{}
 
-**Loading the Styles into the HTML Page{
-
-}
-
 **----------------------------------------------------------------------------------------------
 Overwriting Styles
 
@@ -70,6 +66,31 @@ h1{
     color:red;
 }
 would mean all h1 elements are coloured blue
+
+**inheritence---------------------------------------------------------------------------------
+where possible children will inherit the properties of it's ancestors. for example if 
+div{
+  color:red;
+}
+and
+<div><p>this text is red</p></div>
+the text will be red as the <p> element inherits the red property from <div>
+
+**setting colors-------------------------------------------------------------------
+you can use three different types of color setting
+rgb/a - red, green, blue, alpha rgba(255,255,0,.5) alpha being the transparancy of the colour
+hex code - set the color to a specific hex code
+hsl/a - hue(between 0 and 360 and determines color), saturation (colorfull-ness), lightness (100% is white, 0% is black), alpha (transparancy), hsla(0, 100%, 50%, 0.5)
+
+**The box model--------------------------------------------------------------------
+The box model is how HTML elements are displayed, they consist of four layers, with the content in the centre and the margin at the end 
+Content - The content of the box, where text and images etc appear
+Padding - Clears an area around the content. The padding takes on the background colour 
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+the total size a HTML element takes up is equal to the combined amount of all four sizes for example the content might width:200px 
+
 
 **CSS and Tables-----------------------------------------------------------------------------------
 
