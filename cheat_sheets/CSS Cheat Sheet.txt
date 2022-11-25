@@ -26,6 +26,8 @@ Element - select all HTML elements of a certain type, i.e. all h1 elements h1{}
 Class - select all HTML elements of a certain class (defined as a HTML attribute in the element) i.e. <h1 class = "headers">, uses a dot .headers{}
 ID - select a specific HTML element with an Id, Ids are uniqie to HTML elements i.e. <h1 id="squirtle heading"> no other HTML element will have an id of "squirtle heading" uses a # #squirtle_heading{}
 combining Selectors
+Attribute - select HTML elements according to a specific attribute value a[href="florence"]{} selects all <a> tags with the attribute href with "florence" somewhere in it
+for example <a href="https://visitflorence.it">
 
 --> specifying multipe selectors for the element to be styled, there can be no space between the two selectors
 
@@ -82,6 +84,14 @@ rgb/a - red, green, blue, alpha rgba(255,255,0,.5) alpha being the transparancy 
 hex code - set the color to a specific hex code
 hsl/a - hue(between 0 and 360 and determines color), saturation (colorfull-ness), lightness (100% is white, 0% is black), alpha (transparancy), hsla(0, 100%, 50%, 0.5)
 
+**The DOM tree-----------------------------------------------------------------------------
+Document Object Model - is a cross platform, language independent interface that treats an XML or HTML document as a tree structure
+
+each HTML element is an object in the structure, with the root node being the document and then splitting into head and body 
+and then further 
+
+for example a <div> element in the body would be a node below the body
+
 **The box model--------------------------------------------------------------------
 The box model is how HTML elements are displayed, they consist of four layers, with the content in the centre and the margin at the end 
 Content - The content of the box, where text and images etc appear
@@ -90,6 +100,8 @@ Border - A border that goes around the padding and content
 Margin - Clears an area outside the border. The margin is transparent
 
 the total size a HTML element takes up is equal to the combined amount of all four sizes for example the content might width:200px 
+
+**Pseudo Classes--------------------------------------------------------------------------------
 
 
 **CSS and Tables-----------------------------------------------------------------------------------
