@@ -102,6 +102,55 @@ Margin - Clears an area outside the border. The margin is transparent
 the total size a HTML element takes up is equal to the combined amount of all four sizes for example the content might width:200px 
 
 **Pseudo Classes--------------------------------------------------------------------------------
+a pseudo class can be attached to any selector, it is written as 
+
+selector:pseudo_class
+
+pseduo classes can be used to define a special state of an element for example: 
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+e.g. the hover pseudo class, defines what happens when a user hovers over an element with their mouses
+a:hover{
+  color:blue
+}
+
+will make any <a> elements turn blue when hovered over 
+
+}
+
+**!important-------------------------------------------------------------------------------------
+
+the !important keyword can be applied to specific declarations only (i.e. color:blue; not entire rules i.e. h1{})
+to overwrite any styling 
+
+it should be used sparingly 
+
+h1{
+  color:blue !important;
+  font-family:arial;
+}
+
+in this example all h1 elements will be colored blue no matter what
+
+**Borders----------------------------------------------------------------------------------------
+
+borders around elements have the following properties: 
+
+width - (set in pixels or using keywords thin, medium or thick)
+style - (from 10 different styles e.g. none, dotted, solid)
+color - change the color
+border radius - changes the look of the border i.e. give it rounded edges the value is given as a percentage or in pixels 
+it sets the borders to a circle with a radius of X% or Xpx. to make a perfect circle set it to 50% or half the width (radius)
+
+for example 
+h1{
+  border: dotted 1px red;
+  border-radius:10%;
+}
+
+adds a 1 pixel thick red dotted bordera around all h1 elements 
 
 
 **CSS and Tables-----------------------------------------------------------------------------------
