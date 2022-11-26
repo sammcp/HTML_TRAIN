@@ -168,7 +168,30 @@ this works with less entries
 2 entries: first one is top and bottom, second is left and right
 
 **Margin----------------------------------------------------------------------------------------
+the margin refers to the space outside the box (i.e. outside the border), the margin property is used to set this 
+you can use: 
+margin (sets all sides equally)
+or margin-top
+margin-bottom
+margin-left
+margin-right
 
+margin has the same shorthand properties as padding
+
+centering content.
+
+the margin property will also allow you to centre content 
+
+for example: 
+margin:0 auto; will center the element in their containing elements.
+
+it sets the top and bottom margins to 0 and the left right margins to whatever they need to be to center the element
+
+the auto informs the browser to adjust the left and right margins until the element is centered in it's containing element.
+
+in order to center an element, a width must be set for that element. otherwise the element will be set to the full width of the containing element 
+
+it is impossible to center an element that takes up the full width of the pade since the width of th page can change.
 
 **CSS and Tables-----------------------------------------------------------------------------------
 
