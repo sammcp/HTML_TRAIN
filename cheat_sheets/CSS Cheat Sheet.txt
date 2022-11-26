@@ -191,7 +191,42 @@ the auto informs the browser to adjust the left and right margins until the elem
 
 in order to center an element, a width must be set for that element. otherwise the element will be set to the full width of the containing element 
 
-it is impossible to center an element that takes up the full width of the pade since the width of th page can change.
+it is impossible to center an element that takes up the full width of the pade since the width of the page can change.
+
+**margin collapse-----------------------------------------------------------------
+horizontal margines do not collapse. I.e. the distance between two element's borders next to each other (left/right) iss the margin of both added together 
+
+wheras vertical(up/down) margines collapse, only the larger of the two vertical margins sets the distance between them
+
+**height/width limits----------------------------------------------------------------
+
+due to screen sizes it may be wise to limit the minimum and maximum width of elements
+
+min-width—this: minimum width of an element’s box
+max-width—this: maximum width of an element’s box
+
+min-height — minimum height for an element’s box.
+max-height — maximum height of an element’s box.
+
+if the max/min properties are set too low elements can spill off screen and/or become illegible
+if the max/min properties are set too high then elements can become tiny in comparison to the screen
+
+going over/under the maximum pixel count will not dissapear the content but make it so that the size doesn't scale 
+anymore with the page, normally the width/height will go larger/smaller to accomodate the screen size.
+
+**The Overflow Property---------------------------------------------------------------
+THe overflow property controls what happens to content that spills or overflows outside it's box
+
+common properties:
+hidden - content that overflows will be hidden from view 
+scroll - a scrollbar will be added to the element's box so that the result can still be viewed 
+visible - the overflow content will be displayed outside of the containing element - (default)
+used like so 
+p{
+  overflow:scroll;
+}
+
+
 
 **CSS and Tables-----------------------------------------------------------------------------------
 
