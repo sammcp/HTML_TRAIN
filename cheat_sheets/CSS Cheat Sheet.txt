@@ -152,6 +152,23 @@ h1{
 
 adds a 1 pixel thick red dotted bordera around all h1 elements 
 
+**Padding----------------------------------------------------------------------------------------
+The space between the contents of a box and it's borders. Padding can be applied to all sides or to one specific side using: 
+padding:
+padding-top:
+padding-bottom:
+padding-left:
+
+padding shorthand - padding shorthand allows you to specify the above properties using just one line 
+
+padding: 10px 15px 10px 15px;
+the first entry is always the top with the other entries going clockwise (right, bottom, left)
+this works with less entries 
+3 entries: first one is top, second is left and right padding, last one is bottom padding 
+2 entries: first one is top and bottom, second is left and right
+
+**Margin----------------------------------------------------------------------------------------
+
 
 **CSS and Tables-----------------------------------------------------------------------------------
 
