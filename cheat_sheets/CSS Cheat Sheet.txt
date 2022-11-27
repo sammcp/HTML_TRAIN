@@ -264,6 +264,62 @@ will be an empty space on the page
 Note the display property can be used to do a similair thing 
 display:none; will remove an element from the page and not reserve the space
 
+**FLow of HTML-------------------------------------------------------------------
+There are five properties used to adjust the position of HTML elements using CSS
+-position
+-display-z-index
+-float
+-clear
+
+**position------------------------------------------------------------------------
+the default position of a block-level element is on the far left hand side of the browser, 
+the default position can be changed using: 
+
+static - the default value 
+
+--> relative - position the element relative to its default static position on the web page
+the relative keyword must be accompanied by some offset properties that will move the element 
+away from it's default using, top, bottom, left, right.
+
+the element will be removed from the normal document flow which can cause slipping issues
+
+these offsets will move the element away from the specified position. i.e. top:50px will move 
+the element down 50 pixels.
+
+
+-->  absolute - all other elements on the page will ignore the element. The element will be positioned 
+relative to it's closest positioned parent element. Offset properties (as above) can be used to determine 
+it's final position from there
+
+-->  fixed  - fix an element to a specific position on the page (regardless of user scrolling)
+accompany with the offset properties, often used for navigation bars on a website
+
+the HTML page will not move to accomdate the fixed element. For example content at the top of the page
+may be cut off by a header if not formatted properly 
+
+the HTML element will be removed from the normal document flow
+
+--> sticky - the element sticks to a specified position as the user scrolls (stays within the document flow)
+used in combination with the offset properties as well.
+
+the element will remain in it's relative position and scroll as usual, when it reaches the specified position using the 
+offset i.e. 240pixels from the top, it will then stick to that position (will stay 240 pixels from the top) and will not 
+disspear as the user scrolls down (it will stay at 240 pixels from the top)
+
+
+**z-index-----------------------------------------------
+The z-index property controls how far back or how far forward an element should appear on the web page when elements overlap 
+deeper elements appear behind shallower elements
+
+the z-index property accepts integer values, depending on their values, the browsers orders them (Or rather renders them)
+over or underlapping
+
+the higher the index the more far forward it is, something with an index of 10 will be shown over something with an index over 1
+
+h1{
+  z-index:10;
+}
+
 
 
 
