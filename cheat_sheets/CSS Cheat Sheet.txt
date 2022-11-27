@@ -101,6 +101,21 @@ Margin - Clears an area outside the border. The margin is transparent
 
 the total size a HTML element takes up is equal to the combined amount of all four sizes for example the content might width:200px 
 
+**Alternative box model-------------------------------------------------------------
+by default the model used by web browsers to render content is as above. However, there are other options 
+the box-sizing property changes how the browser renders content, 
+
+the default (as described above is "content-box")
+
+an alternative is border-box. 
+the border-box model works in the opposite way as the content-box model. The total size of an element remains fixed.
+for example, if the height and width are 300px and the padding is 10px, the padding is part of the 300px. It remains within the total size.
+
+to set this you can use the *{} selector e.g.
+*{
+  boz-sizing:border-box;
+}
+
 **Pseudo Classes--------------------------------------------------------------------------------
 a pseudo class can be attached to any selector, it is written as 
 
@@ -225,6 +240,30 @@ used like so
 p{
   overflow:scroll;
 }
+
+**resetting defaults------------------------------------------------------------------
+all major web browsers have a default style sheet they use in the absence of an external style sheet known as user agent style sheets.
+
+many developers therefore choose to reset these default values so they can work with a clean slate 
+e.g. 
+*{
+  margin:0;
+  padding:0;
+}
+
+**visibility-------------------------------------------------------------------------
+elements can be hidden from view with the visibility property
+it can be set to: 
+hidden- hides an element (not visible but a space is still reserved)
+visible - displays 
+collapse - collapses an element (no space and not visible)
+
+note when using hidden: the web page will only hide the element but will not remove the space reserved for it so there 
+will be an empty space on the page 
+
+Note the display property can be used to do a similair thing 
+display:none; will remove an element from the page and not reserve the space
+
 
 
 
