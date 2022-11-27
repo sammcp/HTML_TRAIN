@@ -330,6 +330,11 @@ in-line
 block-level
 inline-block
 
+set as: 
+h1{
+  display:inline-block;
+}
+
 
 the default display for some elements such as <em>, <strong> and <a> is called "inline"
 inline elements have a box that wraps tightly aroundtheir content, only taking up as much space as is 
@@ -337,7 +342,7 @@ necessary to display their content and not requiring a new line after each eleme
 
 the height and width of these elements cannot be specified using css properties
 
-the opposite of inline elements are block-level elements, they are not displayed on the same 
+the opposite of inline elements are block-level elements, they are not displayed on the same
 line as the content around them and take up the entire width of the page. BY default this includes 
 headers,p, div, footer etc.
 
