@@ -320,6 +320,31 @@ h1{
   z-index:10;
 }
 
+**Display property------------------------------------------------------------------------------
+
+the display property changes how elements are located on the screen. If they can be displayed next to each other 
+or need their own line or if they can be changed by the CSS height and width properties
+
+the display property may have three values 
+in-line
+block-level
+inline-block
+
+
+the default display for some elements such as <em>, <strong> and <a> is called "inline"
+inline elements have a box that wraps tightly aroundtheir content, only taking up as much space as is 
+necessary to display their content and not requiring a new line after each element.
+
+the height and width of these elements cannot be specified using css properties
+
+the opposite of inline elements are block-level elements, they are not displayed on the same 
+line as the content around them and take up the entire width of the page. BY default this includes 
+headers,p, div, footer etc.
+
+inline block elements combine aspects of both of the above. they can appear next to each other and we can specify their dimensions 
+using the width and height property, images are a good example of these.
+
+
 
 
 
