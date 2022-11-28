@@ -18,11 +18,24 @@ p{
     font-family:'Times New Roman', Times, serif;
 }
 
-table, th, td {
+/*table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     border-color:blue;
   }
+  */
+.display_table{
+    display:inline;
+    padding:0px 0px;
+}
+
+td, th{
+    display: inline;
+}
+
+thead, tbody, tr{
+ display:inline;
+}
 
 section{
     border: 1px solid black;
