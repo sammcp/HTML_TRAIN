@@ -280,6 +280,12 @@ static - the default value
 --> relative - position the element relative to its default static position on the web page
 the relative keyword must be accompanied by some offset properties that will move the element 
 away from it's default using, top, bottom, left, right.
+{
+  position:relative;
+  top
+  bottomleft
+  right
+}
 
 the element will be removed from the normal document flow which can cause slipping issues
 

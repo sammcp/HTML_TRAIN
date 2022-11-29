@@ -24,19 +24,26 @@ p{
     border-color:blue;
   }
   */
-.display_table{
-    display:inline;
-    padding:0px 0px;
+
+table{
+    border:2px solid black;
+    border-collapse:collapse;
 }
 
-td, th{
-    display: inline;
+td, th{ /* individual elements of the table*/
+    padding:5px;
 }
 
-thead, tbody, tr{
- display:inline;
+
+thead, tbody, tfoot{ /*grouped rows of the table*/
+    padding:5px 0px;
 }
+
 
 section{
     border: 1px solid black;
+}
+
+tr{
+    border-bottom: 2px solid black;
 }
