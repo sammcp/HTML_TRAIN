@@ -4,7 +4,6 @@ header{
 
 body{
     background-color: powderblue;
-    margin: 20px;
     
 }
 h1{
@@ -46,4 +45,22 @@ section{
 
 tr{
     border-bottom: 2px solid black;
+}
+
+.main_div{
+    display:inline-block;
+    border:1px solid black;
+    width:33%
+}
+
+.left_div{
+
+}
+
+.right_div{
+
+}
+
+.middle_div{
+
 }
