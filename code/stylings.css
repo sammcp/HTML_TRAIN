@@ -50,14 +50,15 @@ tr{
 .main_div{
     display:inline-block;
     border:1px solid black;
-    width:33%
+    width:33.2%
 }
 
 .left_div{
-
+    float:left;
 }
 
 .right_div{
+    float:right;
 
 }
 

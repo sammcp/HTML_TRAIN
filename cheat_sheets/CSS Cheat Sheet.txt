@@ -84,6 +84,9 @@ rgb/a - red, green, blue, alpha rgba(255,255,0,.5) alpha being the transparancy 
 hex code - set the color to a specific hex code
 hsl/a - hue(between 0 and 360 and determines color), saturation (colorfull-ness), lightness (100% is white, 0% is black), alpha (transparancy), hsla(0, 100%, 50%, 0.5)
 
+colours can be used to set colour for 
+color: the color of the object 
+background-color: the color of the background of the object 
 **The DOM tree-----------------------------------------------------------------------------
 Document Object Model - is a cross platform, language independent interface that treats an XML or HTML document as a tree structure
 
@@ -397,3 +400,17 @@ th, td {
   text-align:left;
   border-spacing:4px; //the space between table cells, set to 2 by default
 }
+
+**Float--------------------------------------------------------------
+moves an element as far right or left as possible 
+float:left;
+float:right;
+
+when elements float around they can sometimes crash around, the clear property
+can describe how they move when bumping into each other
+left - the left side of the element will not touch any other element within the same 
+containg element
+right - same as above but right 
+both - neither side of the element will touch any other element within the
+same containg element
+none - the element can touch either side
