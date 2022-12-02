@@ -414,3 +414,15 @@ right - same as above but right
 both - neither side of the element will touch any other element within the
 same containg element
 none - the element can touch either side
+
+**Typography--------------------------------------------------------
+
+set the font using 
+h1{
+  font-family:'Times New Roman';
+}
+
+web safe fonts: 
+  web safe fonts are fonts that appear the same across all browsers 
+
+web safe fonts are good to use as fallback fonts 
